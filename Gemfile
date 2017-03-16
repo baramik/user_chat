@@ -31,6 +31,7 @@ gem 'haml'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 3.0'
 gem 'devise'
+gem 'mechanize'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -39,6 +40,7 @@ gem 'devise'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'factory_girl_rails'
   gem 'poltergeist'
   gem 'database_cleaner'
   gem 'rspec-rails'
