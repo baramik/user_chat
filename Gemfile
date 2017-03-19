@@ -33,6 +33,10 @@ gem 'redis', '~> 3.0'
 gem 'devise'
 gem 'mechanize'
 gem 'bootstrap'
+gem 'shoulda-matchers'
+gem 'ffaker'
+gem 'vcr'
+gem 'webmock'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
