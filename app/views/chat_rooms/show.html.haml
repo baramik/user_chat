@@ -1,0 +1,18 @@
+.row
+  .chat-container.col-md-8
+    .row.chat-title
+      .col-md-8
+        %h1= @chat_room.title
+      .col-md-4
+        = link_to 'back to chat rooms', chat_rooms_path
+    #messages{ 'data-chat-room-id': "#{@chat_room.id}" }
+      = render @chat_room.messages
+
+    = form_for @message, url: '#' do |f|
+      .form-group
+        = f.text_area :body, class: 'form-control', placeholder: 'Please enter your message from 2 to 1000 characters'
+      = f.submit "Post", class: 'btn btn-primary btn-lg'
+
+  #online-users-section.col-md-4
+    %h2 Online users
+    = render 'online_users'

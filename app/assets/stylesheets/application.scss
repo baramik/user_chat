@@ -1,0 +1,72 @@
+@import 'bootstrap';
+
+#messages {
+  margin-top: 1rem;
+  max-height: 450px;
+  overflow-y: auto;
+  .avatar {
+    margin: 0.5rem;
+  }
+}
+
+#online-users-section {
+  margin-top: 1rem;
+  .user-item {
+    margin-left: 1rem;
+  }
+}
+
+.chat-container {
+  padding-left: 4rem;
+  form {
+    margin-top: 2rem;
+  }
+}
+
+.chat-title {
+  margin-top: 2rem;
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1rem;
+  }
+}
+
+.navbar-header{
+  margin-left:5px;
+  width:100%;
+  a {
+    float: right;
+  }
+}
+
+.form-wrapper {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  h2 {
+    text-align: center;
+  }
+  form {
+    padding: 0% 10% 10% 10%
+  }
+}
+
+//  DIALECTS = { yoda: 'Yoda', valley: 'Valley girl', ebonics: 'Ali G' }
+.yoda-icon {
+  background-image: image_url('yoda.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.valley-icon {
+  background-image: image_url('valey_girl.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.ebonics-icon {
+  background-image: image_url('ali_g.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

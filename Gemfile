@@ -32,6 +32,7 @@ gem 'haml'
 gem 'redis', '~> 3.0'
 gem 'devise'
 gem 'mechanize'
+gem 'bootstrap'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
