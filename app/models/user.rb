@@ -9,6 +9,8 @@ class User < ApplicationRecord
   has_many :chat_rooms, dependent: :destroy
   has_many :messages, dependent: :destroy
 
+  validates_presence_of :dialect
+
   scope :online, -> { where('updated_at > ? OR online = ?', ONLINE_PERIOD.ago, true) }
 
   def name

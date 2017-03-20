@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.degraeve.com/cgi-bin/babel.cgi?d=yoda&url=http://www.multivax.com/last_question.html&w=I%20am%20talking%20to%20you%20my%20little%20friend
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.5 Ruby/2.3.1p112 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.degraeve.com
+      Referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.degraeve.com
+        port: 80
+        path: "/translator.php"
+        query: 
+        opaque: 
+        fragment: 
+        parser: !ruby/object:URI::RFC3986_Parser
+          regexp:
+            :SCHEME: !ruby/regexp /\A[A-Za-z][A-Za-z0-9+\-.]*\z/
+            :USERINFO: !ruby/regexp /\A(?:%\h\h|[!$&-.0-;=A-Z_a-z~])*\z/
+            :HOST: !ruby/regexp /\A(?:(?<IP-literal>\[(?:(?<IPv6address>(?:\h{1,4}:){6}(?<ls32>\h{1,4}:\h{1,4}|(?<IPv4address>(?<dec-octet>[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]|\d)\.\g<dec-octet>\.\g<dec-octet>\.\g<dec-octet>))|::(?:\h{1,4}:){5}\g<ls32>|\h{,4}::(?:\h{1,4}:){4}\g<ls32>|(?:(?:\h{1,4}:)?\h{1,4})?::(?:\h{1,4}:){3}\g<ls32>|(?:(?:\h{1,4}:){,2}\h{1,4})?::(?:\h{1,4}:){2}\g<ls32>|(?:(?:\h{1,4}:){,3}\h{1,4})?::\h{1,4}:\g<ls32>|(?:(?:\h{1,4}:){,4}\h{1,4})?::\g<ls32>|(?:(?:\h{1,4}:){,5}\h{1,4})?::\h{1,4}|(?:(?:\h{1,4}:){,6}\h{1,4})?::)|(?<IPvFuture>v\h+\.[!$&-.0-;=A-Z_a-z~]+))\])|\g<IPv4address>|(?<reg-name>(?:%\h\h|[!$&-.0-9;=A-Z_a-z~])*))\z/
+            :ABS_PATH: !ruby/regexp /\A\/(?:%\h\h|[!$&-.0-;=@-Z_a-z~])*(?:\/(?:%\h\h|[!$&-.0-;=@-Z_a-z~])*)*\z/
+            :REL_PATH: !ruby/regexp /\A(?:%\h\h|[!$&-.0-;=@-Z_a-z~])+(?:\/(?:%\h\h|[!$&-.0-;=@-Z_a-z~])*)*\z/
+            :QUERY: !ruby/regexp /\A(?:%\h\h|[!$&-.0-;=@-Z_a-z~\/?])*\z/
+            :FRAGMENT: !ruby/regexp /\A(?:%\h\h|[!$&-.0-;=@-Z_a-z~\/?])*\z/
+            :OPAQUE: !ruby/regexp /\A(?:[^\/].*)?\z/
+            :PORT: !ruby/regexp /\A[\x09\x0a\x0c\x0d ]*\d*[\x09\x0a\x0c\x0d ]*\z/
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 20 Mar 2017 00:27:09 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PleskLin
+    body:
+      encoding: UTF-8
+      string: |-
+        <html><body><head><title>Crapola Translator</title>
+        <LINK href='/deg.css' rel=stylesheet type=text/css>
+        </head>
+        uhoh, no header.<table border=0 cellpadding=0 cellspacing=0 align=center width=640>
+        <tr><td><h3><a href="/translator.shtml">Translator</a> : Your Words in YODA</h3><blockquote><p>
+         Talking to you my little friend, i am </p></blockquote></td></tr></table>uhoh, no footer.
+    http_version: 
+  recorded_at: Mon, 20 Mar 2017 00:27:09 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,207 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.degraeve.com/translator.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.5 Ruby/2.3.1p112 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.degraeve.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 19 Mar 2017 23:38:05 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PleskLin
+    body:
+      encoding: UTF-8
+      string: "\n\n\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<!-- header
+        -->\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>Crapola
+        Web Translator</title>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=UTF-8\">\n    <meta name=\"generator\" content=\"Steven DeGraeve\"
+        />\n    <meta name=\"description\" content=\"Translate web pages. -- It's
+        fun!\" />\n    <meta name=\"keywords\" content=\"Crapola translator, translator,
+        translate, web translator, web page translator, dialectizer, rinkworks, dialect,
+        ebonics translator, babelfish, boston, ebonics, canadian, haxor, hax0r, crapola,
+        translation, vernaculari, all your base are belong to us, rot13, pig latin\"
+        />\n    <link rel=\"stylesheet\" type=\"text/css\" media=\"print\" href=\"/css/20060723/print.css\"
+        />\n    <link rel=\"stylesheet\" type=\"text/css\" media=\"screen, projection\"
+        href=\"/css/20061228/main.css\" />\n    <link rel=\"alternate\" type=\"application/rss+xml\"
+        title=\"DeGraeve.com Blog RSS\" href=\"http://feeds.feedburner.com/degraeve\"
+        />\n    \n    <link rel=\"shortcut icon\" href=\"http://www.degraeve.com/favicon.ico\">\n
+        \ </head>\n\n  <body id=\"body\">\n\n<div id=\"header\">\n\n\t<div id=\"header_inner\"
+        class=\"fixed\">\n\n\t\t<div id=\"logo\">\n\t\t\t<h1><a href=\"http://www.degraeve.com/\"><span>DeGraeve</span>.com</a></h1>\n\t\t</div>\n\t\t\n\t\t<div
+        id=\"menu\">\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"http://www.degraeve.com\">Home</a></li>\n\t\t\t\t<li><a
+        href=\"http://www.degraeve.com/about/\">About</a></li>\n\t\t\t\t<li><a href=\"http://www.degraeve.com/contact.php\">Contact</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t\t\n\t</div>\n
+        \   <!-- <div id=\"printlogo\"><img src=\"/css/logo.gif\" alt=\"DeGraeve.com\"
+        width=\"181\" height=\"25\" /></div> -->\n</div>\n\n\n<!-- /header -->  \n\n<div
+        id=\"main\">\n\n\t<div id=\"main_inner\" class=\"fixed\">\n\n<div id=\"primaryContent_2columns\">\n<div
+        id=\"columnA_2columns\">\n<h1><span><b>Crapola Web Translator</b></span></h1>\n
+        \ \n\n<p>This is my attempt at a script to translate web pages into a particular
+        vernacular you specify.  The outcome is often funny.</p>\n<form method=\"get\"
+        action=\"http://www.degraeve.com/cgi-bin/babel.cgi\">\nVernacular:<br>\n<input
+        name=\"d\" value=\"\" type=\"radio\">none (use for debugging)<br>\n<input
+        name=\"d\" value=\"yoda\"  type=\"radio\">Yoda<br>\n<input name=\"d\" value=\"rot13\"
+        \ type=\"radio\">ROT13 (<a href=\"/rot13.shtml\">explanation</a>)<br>\n<input
+        name=\"d\" value=\"ayb\"  type=\"radio\">All your base are belong to us<br>\n<input
+        name=\"d\" value=\"boston\"  type=\"radio\">Boston accent<br>\n<input name=\"d\"
+        value=\"canadian\" type=\"radio\">Canadian<br>\n<input name=\"d\" value=\"haxor\"
+        \  type=\"radio\" checked>simple hax0r<br>\n<input name=\"d\" value=\"ebonics\"
+        type=\"radio\">Ali G<br>\n<input name=\"d\" value=\"valley\"  type=\"radio\">Valley
+        Girl<br> \n<input name=\"d\" value=\"binary\"  type=\"radio\">Binary (messy)<br>\n<input
+        name=\"d\" value=\"jeffk\"   type=\"radio\">Jeff K (if you don't understand,
+        don't ask)<br>\n<input name=\"d\" value=\"ultraleet\"   type=\"radio\">Ultra
+        Leet<br>\n<input name=\"d\" value=\"martian\" type=\"radio\">Martian<br>\n<input
+        name=\"d\" value=\"piglatin\" type=\"radio\">Pig Latin<br>\n<input name=\"d\"
+        value=\"smurf\" type=\"radio\">Smurf<br>\n\n<br>\ntranslate a web page:<br>\n<input
+        type=\"text\" name=\"url\" value=\"http://www.multivax.com/last_question.html\"
+        size=\"40\" maxlength=\"255\">\n<br><br>Or Translate your own words:<br>\n<textarea
+        cols=\"40\" rows=\"6\" name=\"w\"></textarea><br>\n<input type=\"submit\"
+        value=\"Translate!\" >\n</form>\n\n<ul>\n<li>See the <a href=\"/transbugs.php\">known
+        bug list</a>.  </li>\n<li><a href=\"/contact.shtml\">Send what you think are
+        bugs to me.</a> </li>\n<li>Also, <a href=\"/contact.php\">send me suggestions
+        for new vernaculars</a>.</li>\n<li>Don't want your site to be translated?
+        \ <a href=\"/translator-deny.php\">Please read these simple instructions.</a></li>\n</ul>\n\n</div>\n</div>\n<div
+        id=\"secondaryContent_2columns\">\n    <div id=\"columnC_2columns\">\n        \n\t
+        \   <h4><span>Most Popular Tools</span></h4>\n\t    <div>\n\t\t<a href=\"http://www.degraeve.com/business-cards/\">Business
+        Card Generator</a><br />\n                <a href=\"http://www.degraeve.com/color-palette/\">Color
+        Palette Generator</a><br />\n                <a href=\"http://www.degraeve.com/favicon/\">Favicon
+        Generator</a><br />\n                <a href=\"http://www.degraeve.com/flickr-rss/\">Flickr
+        RSS Feed Generator</a><br />\n                <a href=\"http://www.degraeve.com/img2txt.php\">IMG2TXT</a>\n\t
+        \   </div>\n\n            <h4><span>All Tools</span></h4>\n            <div
+        \   >\n\t        <!-- <a href=\"http://www.degraeve.com/avatars\">Avatar Generator</a><br
+        /> -->\n                <a href=\"http://www.degraeve.com/bio.php\">Biorhythms</a><br
+        />\n                <!-- <a href=\"http://www.degraeve.com/blog-images/\">Blog
+        Images</a><br /> -->\n\t\t<a href=\"http://www.degraeve.com/business-cards/\">Business
+        Card Generator</a><br />\n                <a href=\"http://www.degraeve.com/color-palette/\">Color
+        Palette Generator</a><br />\n                <a href=\"http://www.degraeve.com/reference/color.php\">Color
+        Picker</a><br />\n                <a href=\"http://www.wittycomics.com/\"
+        class=\"external\">Comic Strip Maker</a><br />\n                <a href=\"http://www.degraeve.com/translator.php\">Crapola
+        Translator</a><br />\n                <a href=\"http://www.degraeve.com/favicon/\">Favicon
+        Generator</a> <br />\n                <a href=\"http://www.degraeve.com/flickr-rss/\">Flickr
+        RSS Feed Generator</a><br />\n                <a href=\"http://www.degraeve.com/img2txt.php\">IMG2TXT</a><br
+        />\n                <a href=\"http://www.degraeve.com/invent-a-word/\">Invent-a-Word</a><br
+        />\n                <a href=\"http://www.degraeve.com/rainbow\">Rainbow Words</a><br
+        />\n                <a href=\"http://www.bimtones.com/\" class=\"external\">Ringtone
+        Composer</a><br />\n                <a href=\"http://www.degraeve.com/rot13.php\">ROT13</a><br
+        />\n                <a href=\"http://www.degraeve.com/subwords.php\">Subwords!</a><br
+        />\n                <a href=\"http://www.degraeve.com/txt2gif.php\">TXT2GIF</a><br
+        />\n                <a href=\"http://www.degraeve.com/weather.php\">Weather
+        by Zip</a><br />\n\t\t<a href=\"http://www.degraeve.com/whats-happening/\">What's
+        Happening</a><br />\n                <a href=\"http://www.degraeve.com/turing/\">Word
+        Association</a><br />\n            </div>\n               \n            <h4><span>Points</span>
+        of Interest</h4>\n            <div    >\n\t    <!--\n\t        <a href=\"http://www.doublecode.com/ajax-examples/\">Ajax
+        Examples</a><br />\n\t\t-->\n                <a href=\"http://www.giftputer.com\"
+        class=\"external\">Giftputer - Find the Perfect Gift</a><br />\n                <a
+        href=\"http://www.colorhunter.com\" class=\"external\">Color Hunter</a><br
+        />\n                <a href=\"http://www.freepdfcards.com\" class=\"external\">Make
+        Business Cards</a><br />\n                <a href=\"http://www.businesscardrobot.com\"
+        class=\"external\">Business Card Robot</a><br />\n                <a href=\"http://www.atomicbusinesscards.com\"
+        class=\"external\">Print Your Own Business Cards</a><br />\n                <a
+        href=\"http://www.franksicons.com\" class=\"external\">Frank's Icons</a><br
+        />\n                <a href=\"http://www.wittyprofiles.com\" class=\"external\">Witty
+        Profiles</a><br />\n                <a href=\"http://www.wittycomics.com\"
+        class=\"external\">Witty Comics</a><br />\n                <a href=\"http://www.bimtones.com\"
+        class=\"external\">Bimtones</a><br />\n\t\t<a href=\"http://www.256pixels.com\"
+        class=\"external\">256pixels</a><br />\n                <a href=\"http://www.legaltshirts.com\"
+        class=\"external\">Legal T-Shirts</a><br />\n\t\t<a href=\"http://www.omniwishlist.com\"
+        class=\"external\">OmniWishList</a><br />\n                <a href=\"http://www.tinyadvice.com\"
+        class=\"external\">tiny advice</a><br />\n\t\t<a href=\"http://www.vintagemakers.com/\"
+        class=\"external\">Custom Wine Cellars</a><br/>\n                <a href=\"http://www.imatternot.com\"
+        class=\"external\">i matter not</a><br />\n                <a href=\"http://www.yumgifts.com\"
+        class=\"external\">Yum Gifts</a><br />\n                <a href=\"http://www.cubestatus.com\"
+        class=\"external\">Cube Status</a><br />\n                <a href=\"http://www.tripocd.com\"
+        class=\"external\">Travel Packing Lists</a><br />\n                <a href=\"http://www.yankeeswapgifts.com\"
+        class=\"external\">Yankee Swap Gifts</a><br />\n\t\t<!--\n\t\t<a href=\"http://www.franks-facts-trivia.blogspot.com/\"
+        class=\"external\">Frank's Facts &amp; Trivia</a><br/>\n\t\t<a href=\"http://www.homeworkpedia.com\"
+        class=\"external\">Homeworkpedia</a><br />\n                <a href=\"http://www.doublecode.com/sarbanes-oxley/\">Sarbanes
+        Oxley</a><br />\n                <a href=\"http://www.doublecode.com/rfid/\">RFID
+        News</a><br />\n                <a href=\"http://www.buddyiconmaker.com\">Buddy
+        Icon Maker</a><br />\n                <a href=\"http://www.doublecode.com/hydrogen/\">Hydrogen
+        Economy</a><br />\n                <a href=\"http://www.doublecode.com/hdtv/\">HDTV
+        Guide</a><br />\n                <a href=\"http://www.doublecode.com/spam-filtering/\">Spam
+        Filtering</a><br />\n                <a href=\"http://www.doublecode.com/nintendo-revolution/\">Nintendo
+        Revolution News</a><br />\n                <a href=\"http://www.doublecode.com/perl/\">Perl</a><br
+        />\n                <a href=\"http://www.edduclos.com\">EdDuclos.com</a><br
+        />\n\t\t<a href=\"http://www.museumsofboston.com\">Museums of Boston</a><br
+        />\n                <a href=\"http://www.rohs101.com/\" class=\"external\">RoHS</a><br
+        />\n                <a href=\"http://www.10-8supply.com/\" class=\"external\">Police
+        Gear</a><br />\n-->\n            </div>\n\n\n\t    <h4><span>Fun &amp; Games</span></h4>\n\t
+        \   <div>\n                <a href=\"http://www.degraeve.com/cgi-bin/hangman.cgi\">Hangman</a><br
+        />\n                <a href=\"http://www.degraeve.com/horoscope.php\">Horoscope</a><br
+        />\n                <a href=\"http://www.degraeve.com/magiceightball/\">Magic
+        8 Ball</a><br />\n                <a href=\"http://www.degraeve.com/mastermind/\">Mastermind</a><br
+        />\n                <a href=\"http://www.degraeve.com/lowcoststarwarscostumes/\">Star
+        Wars Costumes</a>\n<!--                <a href=\"http://www.degraeve.com/live/\">Webcam</a><br
+        /> -->\n\t    </div>\n\n            <h4><span>Reference</span></h4>      \n
+        \           <div    >\n                <a href=\"http://www.degraeve.com/reference/simple-ajax-example.php\">Ajax
+        Example</a><br />\n                <a href=\"http://www.degraeve.com/reference/asciitable.php\">ASCII
+        Table</a><br />\n                <a href=\"http://www.degraeve.com/current-stamp-price.php\">Current
+        Stamp Price</a><br />\n                <a href=\"http://www.degraeve.com/jedirobe/\">Jedi
+        Robe Pattern</a><br />\n\t\t<a href=\"http://www.perlcircus.org\" class=\"external\">Perl
+        Circus</a><br />\n                <a href=\"http://www.degraeve.com/reference/recipes/\">Recipes</a><br
+        />\n                <a href=\"http://www.degraeve.com/reference/specialcharacters.php\">Special
+        Characters</a><br />\n                <a href=\"http://www.degraeve.com/reference/urlencoding.php\">URL
+        Encoded Chars</a>\n            </div>\n\n            <h4><span>Blogs</span></h4>\n
+        \           <div>\n                <a href=\"http://www.energasm.com\" class=\"external\">Energasm</a><br
+        />\n                <a href=\"http://www.beerfordinner.com\" class=\"external\">BeerForDinner.com</a><br
+        />\n\t\t<a href=\"http://www.whatheck.com\" class=\"external\">What the Heck</a><br
+        />\n\t\t<a href=\"http://www.hydrogenthusiast.com/\" class=\"external\">Hydrogenthusiast.com</a><br/>\n
+        \           </div>\n        \n            <h4><span>Misc</span></h4>\n            <div
+        \   >\n                <a href=\"http://www.degraeve.com/archive.php\">Archive</a><br
+        />\n                <a href=\"http://www.degraeve.com/dev/\">Dev</a><br />\n
+        \               <a href=\"http://www.degraeve.com/links.php\">Links</a><br
+        />\n            </div>\n\n\n<h4><span>My Geek Chart</span></h4>\n<object width=\"100\"
+        height=\"100\"><param name=\"movie\" value=\"http://www.geekchart.com/img/geekchart.swf?username=steve\"></param><param
+        name=\"wmode\" value=\"transparent\"></param><embed src=\"http://www.geekchart.com/img/geekchart.swf?username=steve\"
+        wmode=\"transparent\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\"
+        width=\"100\" height=\"100\"></embed></object><br/><a href=\"http://www.geekchart.com/user/steve\">Steve's
+        Geek Chart</a>\n\n\t\t\t</div>\n\n\t\t</div>\n\n\t\t<br class=\"clear\" />\n\n\t</div>\n\n</div>\n\n\n<!--
+        /right side -->\n<div id=\"footer\" class=\"fixed\">\n\n    <p>&copy;1999-2010
+        DeGraeve.com - <a href=\"http://www.degraeve.com/about/\">About</a> - <a href=\"http://www.degraeve.com/contact.php\">Contact</a>
+        - \n    <a href=\"http://feeds.feedburner.com/degraeve\" rel=\"alternate\"
+        type=\"application/rss+xml\"><img src=\"http://www.feedburner.com/fb/images/pub/feed-icon16x16.png\"
+        alt=\"\" style=\"border: 0pt none ; vertical-align: middle;\"></a> <br/>\n
+        \   </p>\n\n</div>\n\n\n<script type=\"text/javascript\">\n\n  var _gaq =
+        _gaq || [];\n  _gaq.push(['_setAccount', 'UA-427894-1']);\n  _gaq.push(['_trackPageview']);\n\n
+        \ (function() {\n    var ga = document.createElement('script'); ga.type =
+        'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol
+        ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var
+        s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\n  })();\n\n</script>\n<!-- Start of StatCounter Code -->\n<script type=\"text/javascript\">\n<!--
+        \nvar sc_project=1469676; \nvar sc_invisible=1; \nvar sc_partition=13; \nvar
+        sc_security=\"63fa642a\"; \n//-->\n</script>\n\n<script type=\"text/javascript\"
+        src=\"http://www.statcounter.com/counter/counter.js\"></script><noscript><img
+        \ src=\"http://c14.statcounter.com/counter.php?sc_project=1469676&amp;java=0&amp;security=63fa642a&amp;invisible=1\"
+        alt=\"\"></noscript>\n<!-- End of StatCounter Code -->\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 19 Mar 2017 23:38:05 GMT
+recorded_with: VCR 3.0.3
