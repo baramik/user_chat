@@ -9,16 +9,23 @@ require 'capybara/rails'
 require 'capybara/poltergeist'
 require 'vcr'
 require 'webmock/rspec'
-
-Capybara.javascript_driver = :poltergeist
+require 'shoulda-matchers'
 require 'support/database_cleaner'
 
+Capybara.javascript_driver = :poltergeist
 WebMock.disable_net_connect!(allow_localhost: true)
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.configure_rspec_metadata!
+end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
 end
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -40,10 +47,12 @@ end
 # Checks for pending migration and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
+ActiveJob::Base.queue_adapter = :test
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  config.include FactoryGirl::Syntax::Methods
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false

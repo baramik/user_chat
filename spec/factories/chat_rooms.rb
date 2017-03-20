@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :chat_room do
     title "MyString"
-    user nil
+    association :user, factory: :user
   end
 end
